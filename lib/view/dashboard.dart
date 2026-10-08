@@ -343,40 +343,59 @@ class _dashboardState extends State<dashboard> {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Stack(
-                  children: [
-                    Container(
-                      height: 150,
-                      width: 150,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadiusGeometry.circular(20),
-                        child: Image.network(
-                          fit: BoxFit.cover,
-                          "https://imgs.search.brave.com/2AvCYVVMRrsPdZeJB6saNO_CLJcSMdfeJeQx3wO_KIk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j"
-                          "/b20vaW1hZ2VzL0kv/NzF5a3JMZklYeEwu/anBn",
+            Container(
+              margin: EdgeInsets.all(15),
+              child: Row(
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadiusGeometry.circular(20),
+                          child: Image.network(
+                            fit: BoxFit.cover,
+                            "https://imgs.search.brave.com/2AvCYVVMRrsPdZeJB6saNO_CLJcSMdfeJeQx3wO_KIk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j"
+                            "/b20vaW1hZ2VzL0kv/NzF5a3JMZklYeEwu/anBn",
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      height: 150,
-                      width: 150,
-                      child: Center(
-                        child: Icon(
-                          Icons.play_circle_fill_rounded,
-                          size: 50,
-                          color: Colors.white,
+                      Container(
+                        height: 150,
+                        width: 150,
+                        child: Center(
+                          child: Icon(
+                            Icons.play_circle_fill_rounded,
+                            size: 50,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Text("Happy Dashain Everyone"),
+                      Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.only(left: 15,right: 15,
+                                top: 10,bottom: 10),
+                            decoration: BoxDecoration(color: Colors.red),
+                            child: Text("PCPS.com",style: TextStyle(
+                                color: Colors.white),),
+                          )
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ],
         ),
