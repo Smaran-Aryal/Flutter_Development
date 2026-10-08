@@ -380,20 +380,47 @@ class _dashboardState extends State<dashboard> {
                   ),
                   Column(
                     children: [
-                      Text("Happy Dashain Everyone"),
-                      Row(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(left: 15,right: 15,
-                                top: 10,bottom: 10),
-                            decoration: BoxDecoration(color: Colors.red),
-                            child: Text("PCPS.com",style: TextStyle(
-                                color: Colors.white),),
-                          )
-                        ],
-                      )
+                      Container(
+                        margin: EdgeInsets.only(left: 15),
+                        width: size.width / 2,
+                        child: Text(
+                          "Happy Dashain Everyone Celebrations ",
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.all(15),
+                        width: size.width/2.2,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.only(
+                                left: 15,
+                                right: 15,
+                                top: 10,
+                                bottom: 10,
+                              ),
+                              decoration: BoxDecoration(color: Colors.red),
+                              child: Text(
+                                "PCPS.com",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                            Text(
+                              "02 Feb 2026",
+                              style: TextStyle(color: Colors.black),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
