@@ -59,7 +59,7 @@ class _dashboardState extends State<dashboard> {
                         child: Container(
                           width: size.width / 2,
                           child: Text(
-                            "Hot News! Read now on Hot Topic",
+                            "Hot News on the Top of Mt Everest",
                             overflow: TextOverflow.ellipsis,
                             maxLines: 2,
                             style: TextStyle(
@@ -299,7 +299,7 @@ class _dashboardState extends State<dashboard> {
                         child: Container(
                           width: size.width / 2,
                           child: Text(
-                            "Hot News! Read now on Hot Topic",
+                            "Hot News in the top of mount everest",
                             overflow: TextOverflow.ellipsis,
                             maxLines: 2,
                             style: TextStyle(
@@ -342,6 +342,41 @@ class _dashboardState extends State<dashboard> {
                   ),
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Stack(
+                  children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadiusGeometry.circular(20),
+                        child: Image.network(
+                          fit: BoxFit.cover,
+                          "https://imgs.search.brave.com/2AvCYVVMRrsPdZeJB6saNO_CLJcSMdfeJeQx3wO_KIk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j"
+                          "/b20vaW1hZ2VzL0kv/NzF5a3JMZklYeEwu/anBn",
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 150,
+                      width: 150,
+                      child: Center(
+                        child: Icon(
+                          Icons.play_circle_fill_rounded,
+                          size: 50,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
