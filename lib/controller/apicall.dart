@@ -1,6 +1,4 @@
 import 'dart:convert' as convert;
-
-
 import 'package:ews/core/static.dart';
 import 'package:ews/model/news.dart';
 import 'package:flutter/foundation.dart';
